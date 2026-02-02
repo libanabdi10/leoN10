@@ -8,7 +8,7 @@ const submitBtn = document.getElementById("submitBtn");
 const cars = {
   lamborghini: { price: "$900,000", image: "lamborghini-aventador.jpg" },
   dodge: { price: "$100,000", image: "dodge-challenger.jpg" },
-  ferrari: { price: "$200,000", image: "ferrari-f40.jpg" },
+  ferrari: { price: "$200,000", image: "ferrari-F40.jpg" },
   rolls: { price: "$350,000", image: "rolls-royce.jpg" },
   mclaren: { price: "$200,000", image: "mclaren.jpg" },
   landcruiser: { price: "$57,200", image: "land-cruiser.jpg" }
@@ -58,3 +58,4 @@ submitBtn.addEventListener("click", function (e) {
     }`
   );
 });
+
