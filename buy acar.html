@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car Sale Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #e4e4e4;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .form-box {
+        background: white;
+        padding: 25px;
+        width: 100%;
+        max-width: 420px;
+        border-radius: 10px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        color: orangered;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 15px;
+      }
+
+      input:focus,
+      select:focus {
+        outline: none;
+        border-color: orangered;
+      }
+
+      .car-info img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      .price {
+        font-size: 18px;
+        font-weight: bold;
+        color: green;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      button {
+        background: black;
+        color: gold;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        opacity: 0.9;
+      }
+
+      /* TABLET */
+      @media (max-width: 768px) {
+        .form-box {
+          padding: 20px;
+        }
+      }
+
+      /* MOBILE */
+      @media (max-width: 480px) {
+        body {
+          padding: 10px;
+        }
+
+        .form-box {
+          padding: 18px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        input,
+        select,
+        button {
+          font-size: 14px;
+          padding: 11px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-box">
+      <h2>Car Sales</h2>
+
+      <!-- Buyer Info -->
+      <input type="text" id="fullname" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+
+      <select id="carSelect">
+        <option value="">Dooro Baabuur</option>
+        <option value="lamborghini">Lamborghini Aventador</option>
+        <option value="dodge">Dodge Challenger</option>
+        <option value="ferrari">Ferrari F40</option>
+        <option value="rolls">Rolls Royce</option>
+        <option value="mclaren">McLaren</option>
+        <option value="landcruiser">Land Cruiser</option>
+      </select>
+
+      <div class="car-info" id="carInfo"></div>
+
+      <button id="submitBtn">Submit</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
